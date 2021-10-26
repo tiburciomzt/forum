@@ -1,0 +1,10 @@
+img {
+    width: 7rem;
+    padding: 10px ;
+}
+
+.logo-container {
+    background-color: red;
+    display: flex;
+    width: 8.5rem;
+}

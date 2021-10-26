@@ -1,0 +1,11 @@
+.box-Text {
+    display: flex;
+    flex-direction: column;    
+    width: 42rem;
+    margin: -7rem auto;
+
+    border-radius: 1rem;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+}

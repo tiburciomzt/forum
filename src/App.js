@@ -1,25 +1,49 @@
-import logo from './logo.svg';
+
+import { Component } from 'react';
+
+import { Boxes } from './Components/boxes/boxes';
+
 import './App.css';
+import { Box } from './Components/box/box';
+import { Search } from './Components/search/search';
+import { Logo } from './Components/logo/logo';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+
+    
+    this.state = {
+      boxes: [],
+      searchTitle:[]
+
+    };
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(boxBody => this.setState({ boxes: boxBody }))
+  }
+  
+
+  render() {
+
+    const { boxes, searchTitle} = this.state;
+    const filterTitle = boxes.filter(Box => 
+      Box.title.includes(searchTitle)
+    );
+    return(
+      <div className="App"> 
+      <Logo/>  
+      <Search 
+          placeholder='search' 
+          handleChange = {e => this.setState({searchTitle: e.target.value})}
+        />
+        <Boxes boxes={filterTitle}/>
+      </div>
+
+    )
+  }
 }
-
 export default App;
