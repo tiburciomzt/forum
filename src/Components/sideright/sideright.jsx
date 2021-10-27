@@ -3,16 +3,19 @@ import React from "react";
 import './sideright.css';
 
 export const Sideright = () => (
-    <div className="last-post"> 
-    <ul>
-        <li>Ultimos Aportes
+<div className="right-container">
+    <><div className="last-post">
+        <h2>Last Posts</h2>
+        <ul>
+            <li>Aporte 1</li>
+            <li>Aporte 2</li>
+        </ul>
+    </div><div className="most-views">
+            <h2>Top views</h2>
             <ul>
-                <li>Aporte 1</li>
-                <li>Aporte 2</li>
+                <li>Top1</li>
+                <li>Top2</li>
             </ul>
-        </li>
-        <li>Mas Vistos</li>  
-    </ul>  
+        </div></>
 </div>
-
     )

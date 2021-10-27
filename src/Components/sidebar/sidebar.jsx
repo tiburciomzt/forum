@@ -4,17 +4,11 @@ import './sidebar.css';
 
 export const Sidebar = () => (
     <div className="categories"> 
-        <ul>
+    <ul>
         <li>Aportes</li>
         <li>Preguntas</li> 
         <li>SRC'S</li>
-        <li>Modelos
-            <ul>
-                <li>ZZ Linux</li>
-                <li>ZZ P Series</li>
-                <li>ZZ I Series</li>
-            </ul>
-        </li>   
-    </ul>  
+        <li>Modelos</li>
+    </ul>
 </div>
     )

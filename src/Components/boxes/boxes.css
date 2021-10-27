@@ -1,5 +1,6 @@
 .box-Text {   
     width: 60%;
-    padding: 10px;
-    margin: 0 auto;
+    margin: 5rem auto;
+    margin-left: 20%;
+    border-left: 1px solid #908f8f7c;
 }

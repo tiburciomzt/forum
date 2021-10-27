@@ -1,29 +1,26 @@
 .search-position {
-    margin-top: -7rem;
-    padding: 30px;
+    margin-top: -5rem;
+    padding: 15px;
 }
 .search {
     position: relative;
-  } 
-  
-  .input-search {
+  }
+.input-search {
     background-color: transparent;
-    box-shadow: 2px 2px 6px black;
+    border: 0.5px inset whitesmoke;
     height: 40px;
     width: 40%;
-    padding: 0 0px;
-    font-size: 1.1em;
+    padding: 15px;
+    font-size: 1em;
     font-weight: lighter;
-    color: black;
-    border-radius: 15px;
+    color: whitesmoke;
+    border-radius: 0.25rem;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     }
-  
-  
-  .input-search+.search:before {
+.input-search+.search:before {
     content: '';
     width: 0px;
     display: block;
