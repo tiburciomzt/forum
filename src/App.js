@@ -7,7 +7,9 @@ import './App.css';
 import { Box } from './Components/box/box';
 import { Search } from './Components/search/search';
 import { Logo } from './Components/logo/logo';
-import { NavBar } from './Components/navBar/navbar';
+import { NavBar } from './Components/navbar/navbar';
+import { Sideright } from './Components/sideright/sideright';
+import { Sidebar } from "./Components/sidebar/sidebar"
 
 class App extends Component {
   constructor() {
@@ -42,8 +44,11 @@ class App extends Component {
         handleChange = {e => this.setState({searchTitle: e.target.value})}
       /> 
       <Logo/>
-      <Boxes boxes={filterTitle}/>
-
+      <div className="container">
+        <Sidebar/>
+        <Boxes boxes={filterTitle}/>
+        <Sideright/>
+      </div>
       </div>
 
     )

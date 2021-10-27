@@ -1,10 +1,12 @@
-.categories {
+.last-post {
     width: 20%;
     height: 20rem;
     padding: 0;
+    margin-right: 0;
+    margin-left: auto;
     margin-top: 15px;
 }
-.categories li{
+.last-post li{
     list-style-type: none;
     padding: .7rem;
     margin-left: 1rem;
