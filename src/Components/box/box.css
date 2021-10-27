@@ -1,18 +1,15 @@
 .box-container {
     display: inline-block;
-    color:white;
     flex-direction: column;
-    background-color: gray;
-    border: 1px solid darkblue;
+    background-color: white;
+    box-shadow: 4px 2px 5px #6d6d8d;
     margin: auto;
-    margin-top: 4px;
+    margin-top: 15px;
     margin-bottom: 2px;
-    padding: 10px;
+    padding: 2.5rem;
     height: 7rem;
-    width: 40rem;
-    border-radius: 1rem;
-    
-
+    width: 51rem; 
+    border-radius: 1rem;   
 }
 
 h1 {
