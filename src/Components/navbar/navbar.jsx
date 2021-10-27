@@ -1,7 +1,6 @@
 import React from "react";
 
 import './navbar.css';
-import { Search } from "../search/search";
 import logo from './logo.svg'
 
 

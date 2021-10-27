@@ -7,6 +7,7 @@ import {Logo} from './Components/logo/logo';
 import {NavBar} from './Components/navbar/navbar';
 import {Sideright} from './Components/sideright/sideright';
 import {Sidebar} from "./Components/sidebar/sidebar"
+import { Scroll } from "./Components/scroll/scroll";
 
 class App extends Component {
     constructor() {
@@ -24,9 +25,12 @@ class App extends Component {
             }))
     }
 render() {
+        
         const {boxes,searchTitle} = this.state;
         const filterTitle = boxes.filter(Box =>Box.title.includes(searchTitle));
-        return(<div className = "App">
+        
+        return(
+          <div className = "App">
             <div className="header">
                 <NavBar/>
                 <Search placeholder = 'Search...'
@@ -35,10 +39,12 @@ render() {
             </div>
             <div className = "container" >
                 <Sidebar />
-                <Boxes boxes = {filterTitle}/> 
+                  <Scroll>
+                    <Boxes boxes = {filterTitle}/>
+                  </Scroll>
                 <Sideright/>
             </div> 
-            </div>
+          </div>
 
         )
     }
