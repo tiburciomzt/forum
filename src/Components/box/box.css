@@ -1,14 +1,11 @@
 .box-container {
-    display: inline-block;
-    flex-direction: column;
-    background-color: white;
     box-shadow: 4px 2px 5px #6d6d8d;
     margin: auto;
     margin-top: 15px;
     margin-bottom: 2px;
     padding: 2.5rem;
     height: 7rem;
-    width: 51rem; 
+    width: 90%; 
     border-radius: 1rem;   
 }
 

@@ -1,7 +1,5 @@
-.box-Text {
-    display: flex;
-    flex-direction: column;    
-    width: 56rem;
+.box-Text {   
+    width: 60%;
     padding: 10px;
     margin: 0 auto;
 }
