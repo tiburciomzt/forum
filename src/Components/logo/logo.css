@@ -1,10 +1,5 @@
-img {
-    width: 7rem;
-    padding: 10px ;
-}
-
 .logo-container {
-    background-color: red;
+    background-color:white;
     display: flex;
     width: 8.5rem;
 }
