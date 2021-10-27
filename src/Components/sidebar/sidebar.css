@@ -1,19 +1,17 @@
 .categories {
+    position: fixed;
+    margin: 5rem 0 0 0;
     width: 20%;
     height: 20rem;
     padding: 0;
-    margin-top: 15px;
 }
 .categories li{
     list-style-type: none;
     padding: .7rem;
     margin-left: 1rem;
-    margin-right: 1rem;
-    box-shadow: 
-        rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-right: 0;
+    text-align: right;
+}
+.categories li:hover{
+    background-color: #b9b7b77a
 }
