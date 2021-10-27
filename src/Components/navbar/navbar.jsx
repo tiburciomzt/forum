@@ -4,15 +4,11 @@ import './navbar.css';
 import { Search } from "../search/search";
 
 
-export const Navbar = () => (
+export const NavBar = () => (
     <nav className="navbar">
         <img className="logo-nav"
             src='https://pngimg.com/uploads/ibm/ibm_PNG19658.png'
-            alt='logoIBM'/>
-        <Search
-            placeholder='search' 
-            handleChange = {e => this.setState({searchTitle: e.target.value})}
-            />    
+            alt='logoIBM'/>   
     </nav>
     )
 

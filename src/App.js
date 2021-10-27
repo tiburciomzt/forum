@@ -7,7 +7,7 @@ import './App.css';
 import { Box } from './Components/box/box';
 import { Search } from './Components/search/search';
 import { Logo } from './Components/logo/logo';
-import { Navbar } from './Components/navbar/navbar';
+import { NavBar } from './Components/navBar/navbar';
 
 class App extends Component {
   constructor() {
@@ -36,9 +36,14 @@ class App extends Component {
     );
     return(
       <div className="App">
-      <Navbar/>
+      <NavBar/>
+      <Search
+        placeholder='search' 
+        handleChange = {e => this.setState({searchTitle: e.target.value})}
+      /> 
       <Logo/>
-        <Boxes boxes={filterTitle}/>
+      <Boxes boxes={filterTitle}/>
+
       </div>
 
     )
