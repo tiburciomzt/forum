@@ -25,10 +25,8 @@ class App extends Component {
             }))
     }
 render() {
-        
         const {boxes,searchTitle} = this.state;
         const filterTitle = boxes.filter(Box =>Box.title.includes(searchTitle));
-        
         return(
           <div className = "App">
             <div className="header">
@@ -39,13 +37,10 @@ render() {
             </div>
             <div className = "container" >
                 <Sidebar />
-                  <Scroll>
                     <Boxes boxes = {filterTitle}/>
-                  </Scroll>
                 <Sideright/>
             </div> 
           </div>
-
         )
     }
 }
