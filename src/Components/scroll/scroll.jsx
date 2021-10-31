@@ -7,4 +7,3 @@ export const Scroll = (props) => {
         </div>
     )
 };
-

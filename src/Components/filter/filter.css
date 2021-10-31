@@ -1,9 +1,17 @@
+.filter{
+    position: fixed;
+    width: 55%;
+    margin-top: -6.8rem;
+    margin-left: 0;
+    padding: 0;
+    background-color: white;
+    border-left: 1px solid #9b9a9a7a;
+}
 .filter-container {
     padding: 0;
     height: 7rem;
     width: auto;
     border-bottom: 1px solid #9b9a9a7a;
-    border-left: 1px solid #9b9a9a7a;
 }
 .filter-container h2{
     text-align: left;
@@ -14,8 +22,8 @@
 .create-button {
     width: 8rem;
     height: 2.5rem;
-    margin-right: auto;
-    margin-left: 88%;
+    margin-right: 0;
+    margin-left: 82%;
     transition-duration: 0.4s;
     padding: .6rem 1rem;
     border: 1px solid #4CAF50;

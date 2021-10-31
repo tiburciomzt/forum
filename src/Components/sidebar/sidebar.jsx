@@ -10,5 +10,5 @@ export const Sidebar = () => (
         <li>SRC'S</li>
         <li>Modelos</li>
     </ul>
-</div>
+	</div>
     )

@@ -1,10 +1,10 @@
 .search-position {
-    margin-top: -5rem;
+    margin-top: -6.5rem;
     padding: 15px;
 }
 .search {
     position: relative;
-}
+  }
 .input-search {
     background-color: transparent;
     border: 0.5px inset whitesmoke;
@@ -13,7 +13,7 @@
     padding: 15px;
     font-size: 1em;
     font-weight: lighter;
-    color: #2f2f2fa2;
+    color: #424242;
     border-radius: 0.25rem;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
@@ -34,6 +34,6 @@
     transition: all 0.2s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    -webkit-transition-delay: 0s; /* Safari*/
-    transition-delay: 0s;
-}
+    -webkit-transition-delay: 0s; 
+      transition-delay: 0s;
+  }
