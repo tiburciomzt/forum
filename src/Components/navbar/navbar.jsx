@@ -9,5 +9,8 @@ export const NavBar = () => (
     <img className = "logo-nav"
         src = { logo }
         alt = 'logoIBM'/>
+    <div className="user">
+        <button className="signin"></button>
+    </div>
 </nav>
 )
