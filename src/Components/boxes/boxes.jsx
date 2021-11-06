@@ -4,6 +4,7 @@ import { Filter } from "../filter/filter";
 
 import './boxes.css';
 
+
 export const Boxes = ({ boxes, onRouteChange }) => (
     <div className='box-Text'>
     <Filter onRouteChange={onRouteChange}/>
