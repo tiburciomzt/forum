@@ -1,11 +1,13 @@
 import React from "react";
 import './filter.css'
 
-export const Filter = (props) => (
+export const Filter = ({ onRouteChange }) => (
     <div className="filter">
         <div className="filter-container">
             <h2>All Posts</h2>
-            <button className="create-button" type="button">
+            <button
+                onClick = {() => onRouteChange("form")}
+                className="create-button">
                 Create New
             </button>
           {/*} <div className="filter-bar">

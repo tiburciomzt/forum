@@ -5,13 +5,17 @@ import {Search} from './Components/search/search';
 import {NavBar} from './Components/navbar/navbar';
 import {Sideright} from './Components/sideright/sideright';
 import {Sidebar} from "./Components/sidebar/sidebar"
-
+import Form from './Components/form/form';
 
 class App extends Component {
     constructor() 
     {
     super();
-    this.state = {boxes: [],searchTitle: []};
+    this.state = {
+            boxes: [],
+            searchTitle: [],
+            route: 'coments'
+        };
     }
 
     componentDidMount(){
@@ -21,6 +25,13 @@ class App extends Component {
                 boxes: boxBody
             }))
     }
+
+    onRouteChange= () => {
+        this.setState({route: 'form'})
+    }
+
+
+
 render(){
         const {boxes,searchTitle} = this.state;
         const filterTitle = boxes.filter(Box =>Box.title.includes(searchTitle));
@@ -28,13 +39,17 @@ render(){
           <div className = "App">
             <div className="header">
                 <NavBar/>
-                <Search placeholder = 'Search...'
-                handleChange = {e => this.setState({searchTitle: e.target.value})
+                <Search 
+                    placeholder = 'Search...'
+                    handleChange = {e => this.setState({searchTitle: e.target.value})
                     }/>
             </div>
             <div className = "container" >
                 <Sidebar />
-                    <Boxes boxes = {filterTitle}/>
+                {this.state.route === 'coments'
+                    ?<Boxes boxes = {filterTitle} onRouteChange = {this.onRouteChange}/>
+                    :<Form/>       
+                }
                 <Sideright/>
             </div> 
           </div>
