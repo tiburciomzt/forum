@@ -38,3 +38,8 @@
     -webkit-transition-delay: 0s; 
       transition-delay: 0s;
   }
+@media all and (max-width:800px){
+    .search-position{
+        visibility: hidden;
+    }
+}
