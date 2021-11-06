@@ -1,11 +1,12 @@
 .form {
     
     padding: 1rem;
-    height: 7rem;
+    height: 100%;
     width: 50%;
     margin-top: 6%;
     margin-left: 20%;
     border-bottom: 1px solid #9b9a9a7a;
     border-left: 1px solid #9b9a9a7a;
+    text-align: left;
 }
 
