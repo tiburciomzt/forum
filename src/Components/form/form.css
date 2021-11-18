@@ -1,15 +1,14 @@
 .form {
-    
     padding: 1em;
     height: 100%;
     width: 50%;
-    margin-top: 3%;
+    margin-top: 5.7%;
     margin-left: 20%;
     border-bottom: 1px solid #9b9a9ac2;
     border-left: 1px solid #9b9a9a7a;
 }
 
-input {
+input, textarea {
     display: flex;
     padding: 5px;
     margin: 10px;
@@ -40,9 +39,9 @@ label {
 }
 
 #message {
-    height: 100px;
-
-    
+    height: 190px;
+    resize: none;
+    overflow-y: scroll;
 }
 
 .button {

@@ -1,6 +1,6 @@
 .box-Text {
     width: 55%;
-    margin-top: 12rem;
+    margin-top: 14.3rem;
     margin-left: 20%;
     padding: 0;
 }
@@ -11,25 +11,32 @@
       width: 90%;
       margin-left: 0%;
     }
+
     .categories{
         visibility: hidden;
     }
+
     .box-container h4{
         font-size: 120%;
         text-align: center;
     }
+
     .box-container h5{
         visibility: hidden;
     }
+
     .right-container{
         visibility: hidden;
     }
+
     .filter{
         width: 100%;
     }
+
     .filter-container{
         height: 5rem;
     }
+
     .create-button{
         width: 5rem;
         height: 1.8rem;
@@ -38,7 +45,9 @@
         margin-left: 45%;
         margin-top: -2rem;
     }
+
     .logo-nav{
         margin-left: -100rem;
     }
+
   }
