@@ -1,15 +1,17 @@
 .search-position {
-    margin-top: -6.5rem;
-    padding: 15px;
+    display: block;
+    position:fixed;
+    align-items: center;
+    left: 300px;
+
+
 }
-.search {
-    position: relative;
-  }
+
 .input-search {
     background-color: transparent;
     border: 0.5px inset whitesmoke;
     height: 40px;
-    width: 40%;
+    width: 100%;
     padding: 15px;
     margin-top: 1.9rem;
     font-size: 1em;
@@ -20,7 +22,8 @@
     transition: all 0.4s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    }
+}
+
 .input-search+.search:before {
     content: '';
     width: 0px;

@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Route } from 'react-router-dom';
 import { Boxes } from './Components/boxes/boxes';
 import './App.css';
 import {Search} from './Components/search/search';
