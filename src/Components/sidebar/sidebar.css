@@ -5,6 +5,10 @@
     height: 20rem;
     padding: 0;
 }
+.categories ul{
+    padding: 0;
+    width: 100%;
+}
 .categories li{
     list-style-type: none;
     padding: .7rem;
@@ -17,4 +21,10 @@
     border-radius: 5rem;
     margin-left: 2rem;
     text-align: center;
+	font-weight: 900;
+}
+.categories a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
 }

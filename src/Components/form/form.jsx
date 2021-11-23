@@ -7,7 +7,6 @@ const Form = () => {
         <div className='form'>
             <form method="GET">
                 <label>
-                <div><p>FORM</p></div>
                     <div>
                         <input type="text" name="name" placeholder="User" /> 
                         <input type="text" name="src" placeholder="SRC" />
@@ -35,7 +34,7 @@ const Form = () => {
                     </div>
                     <div>
                         <input type="text" name="title" placeholder="Title" />
-                        <input id="message" type="text" placeholder="Message"></input>
+                        <textarea id="message" type="text" rows="4" cols="50" placeholder="Your Description"></textarea>
                     </div>
                     <div >
                         <input className="button" type="submit" value="Save" />

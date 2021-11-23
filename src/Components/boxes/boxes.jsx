@@ -7,9 +7,9 @@ import './boxes.css';
 
 export const Boxes = ({ boxes, onRouteChange }) => (
     <div className='box-Text'>
-    <Filter onRouteChange={onRouteChange}/>
-    {boxes.map(box => (
-        <Box key={box.id} box={box}/>
-    ))}
-    </div>
+        <Filter onRouteChange={onRouteChange}/>
+        {boxes.map(box => (
+            <Box key={box.id} box={box}/>            
+            ))}
+        </div>
 );
