@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route, Routes, Link } from "react-router-dom";
 import App from "../../App";
 import './sidebar.css';
+import Aportes from "../../pages/aporte";
 
 export const Sidebar = () => (
         <div className="categories"> 
@@ -14,7 +15,7 @@ export const Sidebar = () => (
                 
             </ul>
             <Routes>
-                <Route path="/aportes"/>
+                <Route path="/aportes" element={<Aportes/>}/>
                 <Route path="/preguntas"/>
                 <Route path="/srcs"/>
                 <Route path="/modelos"/>
